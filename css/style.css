@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --main-cl: #5ae556;
+    --card-bg: rgba(242,242,242);
+    --main-bg: aliceblue;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: var(--main-cl);
+    /* border: 1px solid black; */
+    height: 3.7rem;
+    justify-content: space-between;
+    padding: 0 3.5rem 0;
+    z-index: 999;
+}
+
+nav .logo {
+    display: flex;
+    font-family: "Righteous", sans-serif;
+    color: var(--main-bg);
+    position: relative;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+nav ul li a {
+    display: flex;
+    color: var(--main-bg);
+    position: relative;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: gray;
+    transition: ease-in 0.3s;
+}
+
+
+/* bagian home */
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    height: 45rem;
+    padding:  5rem 3.5rem 0;
+    background-color: aliceblue;
+}
+
+#home .text-home {
+    display: flex;
+    flex: 2;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: black;  ini tag mati */
+}
+
+#home .text-home h1,h2,h3 {
+    text-align: left;
+}
+
+#home .text-home h2 {
+    position: relative;
+    top: -3rem;
+}
+
+#home .text-home h1 {
+    font-family: "Righteous", sans-serif;
+    color: var(--main-cl);
+}
+
+#home .img-home {
+    display: flex;
+    flex: 1;
+}
+
+
+/* bagian about dan visi misi */
+
+#about {
+    padding: 3rem 3.5rem 0;
+    height: 50rem;
+}
+
+#about .about-us {
+    margin-top: 5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about-us p {
+    margin-top: 5rem;
+}
+
+#about .visi-misi {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#about .visi-misi .visi,.misi {
+    background-color: var(--card-bg);
+    border-radius: 5px;
+    height: 20rem;
+    width: 30rem;
+    text-align: justify;
+    padding: 3rem;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,0.15),
+    inset -5px -5px 15px rgba(255,255,255,0.15);
+}
+
+/* learn */
+#learn {
+    height: 45rem;
+    padding: 8rem 3.5rem 0;
+    background: linear-gradient(to bottom, lightgreen, aliceblue);
+}
+
+#learn h2 {
+    text-align: center;
+    color: black;
+}
+
+#learn .energi {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+    justify-content: space-around;
+}
+
+#learn .energi .batrai,.pltx,.biogas {
+    width: 25%;
+    height: 20rem;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,0.15),
+    inset -5px -5px 15px rgba(255,255,255,0.15);
+}
+
+/* card 1 */
+#learn .energi .batrai {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#learn .energi .batrai img {
+    width: 8rem;
+    display: flex;
+    margin: 0 auto 0;
+}
+
+
+/* card 2 */
+#learn .energi .pltx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#learn .energi .pltx img {
+    width: 9rem;
+    display: flex;
+    margin: 0 auto 0;
+}
+
+
+/* card 3 */
+#learn .energi .biogas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#learn .energi .biogas img {
+    width: 9rem;
+    display: flex;
+    margin: 0 auto 0;
+}
+
+/* head quarter */
+#headquarter {
+    height: 20rem;
+    background-color: var(--main-bg);
+}
+
+#headquarter h3 {
+    text-align: center;
+}
+
+#headquarter .lokasi {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+
+/* jakarta */
+#headquarter .lokasi .jakarta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#headquarter .lokasi .jakarta img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* bandung */
+#headquarter .lokasi .bandung {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#headquarter .lokasi .bandung img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* lampung */
+#headquarter .lokasi .lampung {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#headquarter .lokasi .lampung img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* form */
+#contact {
+    padding: 4rem 3.5rem 0;
+    height: 35rem;
+    background: linear-gradient(to top,#5ae556,aliceblue);
+}
+
+#contact .input-result {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 3.5rem 0;
+    margin-top: 4rem;
+}
+
+#contact .form {
+    display: flex;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+#contact .form form {
+    display: flex;
+    border-radius: 5px;
+}
+
+#contact .form form .label {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .form form .label label {
+    margin-top: 5px;
+}
+
+#contact .form form .input {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+}
+
+#contact .form form .input input {
+    margin-top: 5px;
+}
+
+#contact .form form .input textarea {
+    margin-top: 5px;
+}
+
+
+#contact .form form .input .gender {
+    margin-top: 5px;
+}
+
+#contact .form button {
+    margin-top: 5px;
+}
+
+
+/* output */
+
+#contact .input-result .result {
+    display: flex;
+    width: 50%;
+    height: 20rem;
+}
+
+
+
+
+
+
+/* responsive mobile*/
+@media only screen and (max-width: 600px) {
+
+}
+
+
+/* responsive tablet */
+@media only screen and (max-width: 768px) {
+    
+}
