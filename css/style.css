@@ -394,6 +394,7 @@ textarea {
     
     #home {
         padding: 0 0.9rem 0;
+        width: 100%;
     }
 
     #home .text-home h3 {
@@ -402,7 +403,7 @@ textarea {
     }
 
     #home .img-home img {
-        width: 200px;
+        width: 400px;
     }
 
     /* baagian about */
