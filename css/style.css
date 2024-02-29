@@ -295,6 +295,7 @@ textarea {
         #home {
             display: block;
             align-items: center;
+            padding: 0 1rem 0;
         }
         
         #home .text-home h2 {
@@ -309,6 +310,7 @@ textarea {
         
         #about {
             height: 55rem;
+            padding: 0 1rem 0;
         }
 
         #about .visi-misi .visi,.misi {
@@ -318,6 +320,10 @@ textarea {
         }
 
         /* learn */
+        #learn {
+            padding: 0 1rem 0;
+        }
+
         #learn .energi {
             display: flex;
             justify-content: space-between;
@@ -342,6 +348,9 @@ textarea {
         }
         
         /* head quarter */
+        #headquarter {
+            padding: 0 1rem 0;
+        }
         
         #headquarter .lokasi .jakarta img{
             width: 150px;
@@ -367,7 +376,7 @@ textarea {
     nav {
         display: flex;
         flex-direction: column;
-        padding: 0 2rem 0;
+        padding: 0 0.9rem 0;
         height: 4rem;
     }
 
@@ -382,13 +391,25 @@ textarea {
     }
 
     /* ini bagian home  */
+    
+    #home {
+        padding: 0 0.9rem 0;
+    }
 
     #home .text-home h3 {
         font-size: 1rem;
         text-align: left;
     }
 
+    #home .img-home img {
+        width: 200px;
+    }
+
     /* baagian about */
+
+    #about {
+        padding: 0 0.9rem 0;
+    }
 
     #about .about-us {
         margin-top: 3rem;
@@ -406,7 +427,7 @@ textarea {
 
     /* ini bagian learn */
     #learn {
-        padding: 3rem 1.5rem 0;
+        padding: 3rem 0.9rem 0;
     }
 
     #learn .energi .batrai {
