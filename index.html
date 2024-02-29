@@ -94,8 +94,7 @@
 
             <div class="biogas">
                 <img src="/aseet/bio gas.png" alt="BIOGAS">
-                <p>biogas merupakan salah satu energi yang ramah lingkungan dengan menggunakan energi gas 
-                    dari kompos limbah <a href="https://id.wikipedia.org/wiki/Biogas">Selangkapnya</a>
+                <p>biogas merupakan salah satu energi yang ramah lingkungan dengan menggunakan energi gas <a href="https://id.wikipedia.org/wiki/Biogas">Selangkapnya</a>
                 </p>
             </div>
         </div>
@@ -124,37 +123,28 @@
 
     <!-- contact us -->
     <div id="contact">
-        <h2>Contact us</h2>
-        <div class="input-result">
-            <!-- form -->
-            <div class="form">
-                <form action="">
-                    <div class="label">
-                        <label for="nama">Nama:</label>
-                        <label for="date">Tgl Lahir:</label>
-                        <label for="gender">Jenis Kelamin:</label>
-                        <label for="pesan">Pesan:</label>
-                    </div>
-                    <div class="input">
-                        <input type="text" id="nama">
-                        <input type="date" id="date">
-                        <div class="gender">
-                            <label for="male">Laki laki</label>
-                            <input type="radio" id="male" name="gender">
-                            <label for="female">Perempuan</label>
-                            <input type="radio" id="female" name="gender">
-                        </div>
-                        <textarea id="pesan" cols="30" rows="10">
-                        </textarea>
-                    </div>
-                </form>
-                <button type="submit">Submit</button>
-            </div>
-
-            <!-- ini bagian reult -->
-            <textarea name="result" id="" cols="20" rows="5" class="result">
-            </textarea>
-        </div>
+        <h2>Form Validation</h2>
+        <form id="myForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name">
+            <div id="nameError" class="error"></div>
+    
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender" name="gender">
+                <option value="">Pilih Jenis Kelamin</option>
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+            </select>
+            <div id="genderError" class="error"></div>
+    
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob">
+            <div id="dobError" class="error"></div>
+    
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+    
+        <textarea id="result" readonly></textarea>
     </div>
 
     <script src="/js/main.js"></script>

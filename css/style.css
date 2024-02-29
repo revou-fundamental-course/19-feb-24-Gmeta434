@@ -60,6 +60,7 @@ nav ul li a:hover {
 
 #home {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     height: 45rem;
     padding:  5rem 3.5rem 0;
@@ -77,11 +78,6 @@ nav ul li a:hover {
 
 #home .text-home h1,h2,h3 {
     text-align: left;
-}
-
-#home .text-home h2 {
-    position: relative;
-    top: -3rem;
 }
 
 #home .text-home h1 {
@@ -152,8 +148,8 @@ nav ul li a:hover {
 }
 
 #learn .energi .batrai,.pltx,.biogas {
-    width: 25%;
-    height: 20rem;
+    width: 400px;
+    height: 350px;
     padding: 20px;
     border-radius: 5px;
     background-color: white;
@@ -260,88 +256,187 @@ nav ul li a:hover {
     border-radius: 50%;
 }
 
-/* form */
+/* contact */
+
 #contact {
-    padding: 4rem 3.5rem 0;
-    height: 35rem;
-    background: linear-gradient(to top,#5ae556,aliceblue);
+    padding: 0 0.3rem 0;
 }
 
-#contact .input-result {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0 3.5rem 0;
-    margin-top: 4rem;
+label {
+    display: block;
+    margin-bottom: 10px;
 }
-
-#contact .form {
-    display: flex;
-    padding: 10px;
-    width: 40%;
-    border-radius: 5px;
-    flex-direction: column;
+input, select {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 10px;
 }
-
-#contact .form form {
-    display: flex;
-    border-radius: 5px;
+textarea {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 100px;
 }
-
-#contact .form form .label {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-}
-
-#contact .form form .label label {
-    margin-top: 5px;
-}
-
-#contact .form form .input {
-    display: flex;
-    flex-direction: column;
-    flex: 7;
-}
-
-#contact .form form .input input {
-    margin-top: 5px;
-}
-
-#contact .form form .input textarea {
-    margin-top: 5px;
-}
-
-
-#contact .form form .input .gender {
-    margin-top: 5px;
-}
-
-#contact .form button {
-    margin-top: 5px;
-}
-
-
-/* output */
-
-#contact .input-result .result {
-    display: flex;
-    width: 50%;
-    height: 20rem;
+.error {
+    color: red;
 }
 
 
 
 
+/* responsive tablet */
+@media only screen and (max-width: 800px) {
+    
+    /* navbar */
+    nav ul {
+        width: 60%;
+        }
+
+        #home {
+            display: block;
+            align-items: center;
+        }
+        
+        #home .text-home h2 {
+            font-size: 1rem;
+        }
+
+        #home .img-home img{
+            width: 500px;
+            margin: 0 auto 0;
+        }
+        /* about */
+        
+        #about {
+            height: 55rem;
+        }
+
+        #about .visi-misi .visi,.misi {
+            width: 15rem;
+            font-size: 0.7rem;
+            height: 20rem;
+        }
+
+        /* learn */
+        #learn .energi {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #learn .energi .batrai,.pltx,.biogas {
+            width: 200px;
+            height: 300px;
+            display: flex;
+        }
+
+        #learn .energi .batrai img {
+            width: 80px;
+        }
+        
+        #learn .energi .pltx img {
+            width: 80px;
+        }
+        
+        #learn .energi .biogas img {
+            width: 80px;
+        }
+        
+        /* head quarter */
+        
+        #headquarter .lokasi .jakarta img{
+            width: 150px;
+            height: 150px;
+        }
+
+        #headquarter .lokasi .bandung img{
+            width: 150px;
+            height: 150px;
+        }
+
+        #headquarter .lokasi .lampung img {
+            width: 150px;
+            height: 150px;
+        }
+
+}
 
 
 /* responsive mobile*/
 @media only screen and (max-width: 600px) {
+    /* navbar */
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem 0;
+        height: 4rem;
+    }
 
-}
+    nav ul {
+        display: flex;
+        width: 100%;
+    }
 
 
-/* responsive tablet */
-@media only screen and (max-width: 768px) {
-    
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    /* ini bagian home  */
+
+    #home .text-home h3 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /* baagian about */
+
+    #about .about-us {
+        margin-top: 3rem;
+    }
+
+    #about .about-us p {
+        font-size: 0.8rem;
+    }
+
+    #about .visi-misi .visi,.misi {
+        width: 200px;
+        height: 300px;
+        padding: 10px 20px 10px;
+    }
+
+    /* ini bagian learn */
+    #learn {
+        padding: 3rem 1.5rem 0;
+    }
+
+    #learn .energi .batrai {
+        font-size: 0.8rem;
+        padding: 5px;
+        width: 300px;
+    }
+
+    #learn .energi .batrai img {
+        width: 50px;
+    }
+
+    #learn .energi .pltx {
+        font-size: 0.8rem;
+        padding: 5px;
+        width: 300px;
+    }
+
+    #learn .energi .pltx img {
+        width: 50px;
+    }
+
+    #learn .energi .biogas {
+        font-size: 0.8rem;
+        padding: 5px;
+        justify-content: none;
+        width: 300px;
+    }
+
+    #learn .energi .biogas img {
+        width: 50px;
+    }
 }
